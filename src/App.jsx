@@ -4,20 +4,18 @@ import "./App.css";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import MovieList from "./MovieList";
+import ApiConsumer from "./ApiConsumer";
 
-function App(): JSX.Element {
+function App() {
   return (
     <div>
       <style>
         @import
-        url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap')
-      </style>
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap')
+        url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
       </style>
       <Header />
       <NavBar />
+      <ApiConsumer />
       <MovieList />
       <Footer />
     </div>

@@ -4,7 +4,7 @@ const Header = () => {
  
     return (
      <header className='header'>
-      {"Cripta cine"}
+      {"Cinema Go"}
      </header>
     )
 }
