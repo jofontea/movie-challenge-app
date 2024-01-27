@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NavBar() {
   return (
-    <div>
+    <div className='nav-bar'>
         <select className='filter'>
             <option disabled> Filtrar por género </option>
             <option> Horror </option>

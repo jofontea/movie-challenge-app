@@ -37,7 +37,7 @@ export default function ApiConsumer() {
   return (
     <div>
       {/* lista de pelis renderizadas a partir de los datos obtenidos de la API */}
-      <ul className="movie-list">
+      <ul className="movie-list" data-testid= "movie-list">
          {/* map genera dinámicamente elementos <li> para cada película */}
         {movies.map((movie) => (
           <li className="movie-cards" key={movie.id}>
@@ -52,7 +52,7 @@ export default function ApiConsumer() {
         ))}
       </ul>
       {/* Paginación con react-paginate */}
-      <div className="pagination-container">
+      <div className="pagination-container" data-testid= "pagination-container">
         <ReactPaginate
           previousLabel={"Anterior"}
           nextLabel={"Siguiente"}

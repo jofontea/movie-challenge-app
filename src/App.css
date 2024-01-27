@@ -19,6 +19,7 @@ body {
 .header {
   text-align: center;
   margin-top: 32px;
+  margin-bottom: 32px;
   font-weight: bold;
   font-size: 64px;
   color: #e4d8cb;
@@ -67,15 +68,15 @@ body {
 }
 .movie-cards {
   padding: 35px 20px 10px 20px;
-  margin: 32px;
+  margin: 32px 32px;
   flex-direction: column;
-  background: #18919f;
+  background: #14737f;
   text-align: center;
   font-size: 20px;
   color: #e7e9c4;
   max-width: 200px;
   border-radius: 15px;
-  border: 2px solid #3d3837;
+  border: 2px solid #0f3338;
   box-shadow: 15px 15px 15px 5px rgb(1, 30, 108);
   width: 350px;
   height: 200;
