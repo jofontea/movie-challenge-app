@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import "./App.css";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import MovieList from "./MovieList";
 import ApiConsumer from "./ApiConsumer";
+import FilterMovies from "./FilterMovies";
 
 function App() {
+  const [movies, setMovies] = useState([])
   return (
     <div>
       <style>
@@ -14,10 +13,8 @@ function App() {
         url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
       </style>
       <Header />
-      <NavBar />
-      <ApiConsumer />
-      <MovieList />
-      <Footer />
+      <FilterMovies movies={movies} setMovies={setMovies} />
+      <ApiConsumer movies={movies} setMovies={setMovies} />
     </div>
   );
 }
